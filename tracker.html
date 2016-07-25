@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<Title> My Tracking App </Title>
+</head>
+<Body>
+<H1>Welcome to my tracking app.</H1>
+<p>
+<H2>Categories</H2>
+<p>
+<H3 id = "category">Meditation</H3>
+<p>When did you meditate?</p>
+<button id="now" onclick="pressedButton(this.id)">NOW</button>
+<button id="morning" onclick="pressedButton(this.id)">This Morning</button>
+<button id="noon" onclick="pressedButton(this.id)">This Afternoon</Button>
+<button id="night" onclick="pressedButton(this.id)">This Evening</Button>
+<button id="today" onclick="pressedButton(this.id)">Today</Button>
+<button id="week" onclick="pressedButton(this.id)">This Week</Button>
+<p id="results">Hi</p>
+<script>
+function pressedButton(x) {
+var x = document.getElementById(x).innerHTML;
+document.getElementById("results").innerHTML= "You pressed " + x;
+}
+</script>
+</body>
+</html>
